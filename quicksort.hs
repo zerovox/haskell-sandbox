@@ -2,7 +2,7 @@
 -- If you build both lists at once, you only need to iterate over the list once.
 
 
--- An infinite list of fairly evently distributed numbers
+-- An infinite list of fairly evenly distributed numbers
 inflist = [x*(x+5000) `mod` 10000 | x <- [1..1000000]]
 biglist = take 100000 inflist 
 

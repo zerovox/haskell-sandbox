@@ -1,4 +1,4 @@
--- A stupid attempt to solve project euler questions as haskell one liners. Absuses recurison by fixed points.
+-- A stupid attempt to solve project euler questions as haskell one liners. Abuses recursion by fixed points.
 
 -- I'd rather not implement the sieve again, and this version(installed from cabal) is very efficient, it does make q7 a bit too easy though!
 import Data.Numbers.Primes
