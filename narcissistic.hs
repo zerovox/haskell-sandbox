@@ -24,4 +24,4 @@ powers n 		= map (^n) [0..9]
 -- List narcissistic numbers of length n
 narcissistic n 	= catMaybes (map (\xs ->check n xs (powers n)) (allNs n))
 
-allNarcs 		= concat (map narcissistic [0..])
+narcsUpTo n 	= concat (map narcissistic [0..n])
