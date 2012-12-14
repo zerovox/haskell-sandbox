@@ -25,3 +25,5 @@ powers n 		= map (^n) [0..9]
 narcissistic n 	= catMaybes (map (\xs ->check n xs (powers n)) (allNs n))
 
 narcsUpTo n 	= concat (map narcissistic [0..n])
+
+main = do mapM_ putStrLn (map show (narcsUpTo 25))
